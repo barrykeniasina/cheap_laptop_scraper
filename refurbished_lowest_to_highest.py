@@ -12,10 +12,11 @@ body="" #empty body for the email
 email_user = "Enter your sender email"
 email_pass = "password"
 
+date_time = datetime.now() #time to make each subject unique
+
 # Define the recipient and subject
 to_email = "Enter your reciever email"
-subject = 'Your subject'
-
+subject  = date_time.strftime("%m/%d/%Y, %H:%M:%S")+" www.australiancomputertraders.com.au, Cheap Prices" 
 
 #########scraper#################
 
